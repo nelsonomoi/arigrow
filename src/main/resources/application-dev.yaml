@@ -10,3 +10,13 @@ spring:
     username: postgres
     password: postgres
     url: jdbc:postgresql://localhost:5432/arigrow
+
+
+# swagger documentation
+springdoc:
+  api-docs:
+    enabled: true
+    path: /api-docs
+    version: openapi_3_0
+  swagger-ui:
+    path: /
