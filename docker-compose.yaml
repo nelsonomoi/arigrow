@@ -1,0 +1,13 @@
+services:
+  arigrow:
+    container_name: arigrow-backend
+    build:
+      context: .
+      args:
+        CONTAINER_PORT: 9000
+    image: arigrow-backend:v1
+    restart: unless-stopped
+    expose:
+      - ${CONTAINER_PORT}
+    ports:
+      - ${CONTAINER_PORT}:9000
