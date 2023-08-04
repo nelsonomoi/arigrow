@@ -2,6 +2,13 @@ server:
   port: 9000
 
 
+# expose all metrics
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+
 spring:
 
 #  database configuration
@@ -12,6 +19,16 @@ spring:
     url: jdbc:postgresql://localhost:5432/arigrow
 
 
+# flyway
+  flyway:
+    enabled: true
+    user: postgres
+    password: postgres
+    schemas: public
+    url: jdbc:postgresql://localhost:5432/arigrow
+    locations: classpath:db/migrations
+    baseline-on-migrate: true
+
 # swagger documentation
 springdoc:
   api-docs:
@@ -20,3 +37,5 @@ springdoc:
     version: openapi_3_0
   swagger-ui:
     path: /
+
+
