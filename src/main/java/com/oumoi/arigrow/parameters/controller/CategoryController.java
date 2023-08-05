@@ -1,9 +1,9 @@
-package com.oumoi.arigrow.parameters.resource;
+package com.oumoi.arigrow.parameters.controller;
 
 
 import com.oumoi.arigrow.core.utils.ApiResponse;
 import com.oumoi.arigrow.parameters.domain.dtos.CategoryRequest;
-import com.oumoi.arigrow.parameters.controller.CategoryService;
+import com.oumoi.arigrow.parameters.service.CategoryService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
