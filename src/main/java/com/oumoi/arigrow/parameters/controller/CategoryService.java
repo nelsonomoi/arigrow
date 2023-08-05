@@ -1,4 +1,4 @@
-package com.oumoi.arigrow.parameters.service;
+package com.oumoi.arigrow.parameters.controller;
 
 
 import com.oumoi.arigrow.core.utils.ApiResponse;
@@ -9,11 +9,9 @@ import com.oumoi.arigrow.parameters.domain.entity.Category;
 import com.oumoi.arigrow.parameters.domain.repository.CategoryRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
 
 import static com.oumoi.arigrow.utils.MessageConstants.SUCCESS_MESSAGE;
 import static com.oumoi.arigrow.utils.MessageConstants.SUCCESS_STATUS;
