@@ -3,18 +3,16 @@ package com.oumoi.arigrow.parameters.resource;
 
 import com.oumoi.arigrow.core.utils.ApiResponse;
 import com.oumoi.arigrow.parameters.domain.dtos.CategoryRequest;
-import com.oumoi.arigrow.parameters.domain.entity.Category;
-import com.oumoi.arigrow.parameters.service.CategoryService;
+import com.oumoi.arigrow.parameters.controller.CategoryService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/category")
 @Slf4j
 @RequiredArgsConstructor
-public class CategoryResource {
+public class CategoryController {
 
     private final CategoryService categoryService;
 
