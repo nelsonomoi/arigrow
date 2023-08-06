@@ -5,6 +5,9 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.HashSet;
+import java.util.Set;
+
 
 @Getter
 @Setter
@@ -23,10 +26,11 @@ public class Product {
 
     private Double price;
 
-    private String sku;
-
-
     @ManyToOne
     private Category category;
+
+
+    @OneToMany
+    private Set<ImageUrl> imageUrls = new HashSet<>();
 
 }
