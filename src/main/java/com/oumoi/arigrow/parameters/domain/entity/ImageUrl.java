@@ -18,4 +18,7 @@ public class ImageUrl {
 
     private String imageUrl;
 
+    @ManyToOne
+    private Product product;
+
 }
