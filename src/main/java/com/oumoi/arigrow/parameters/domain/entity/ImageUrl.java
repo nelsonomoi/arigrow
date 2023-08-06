@@ -1,26 +1,21 @@
 package com.oumoi.arigrow.parameters.domain.entity;
 
-
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.HashSet;
-import java.util.Set;
-
-@Entity
-@Table(name = "category")
 @Getter
 @Setter
-public class Category {
+@Entity
+@Table(name = "image_url")
+public class ImageUrl {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String name;
 
-    private String description;
+    private String imageUrl;
 
-    @OneToMany
-    private Set<Product> products = new HashSet<>();
 }

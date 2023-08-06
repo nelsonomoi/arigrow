@@ -1,4 +1,4 @@
-package com.oumoi.arigrow.parameters.controller;
+package com.oumoi.arigrow.parameters.service;
 
 
 import com.oumoi.arigrow.core.utils.ApiResponse;
