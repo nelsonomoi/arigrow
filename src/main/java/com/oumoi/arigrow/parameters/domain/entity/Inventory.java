@@ -5,22 +5,19 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.HashSet;
-import java.util.Set;
-
-@Entity
-@Table(name = "category")
 @Getter
 @Setter
-public class Category {
+@Entity
+@Table(name = "inventory")
+public class Inventory {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
+    private Integer quantity;
 
-    private String description;
+    @OneToOne
+    private Product product;
 
-    @OneToMany
-    private Set<Product> products = new HashSet<>();
 }
